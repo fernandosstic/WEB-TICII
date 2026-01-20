@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+</head>
+<body>
+    <section class= "seccioncuestionario">
+
+<form action="enviar.php method=" post>
+
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        Nombre:
+        <input type="text" size="40" title="Escribe tu nombre y apellidos" name="nombre" autofocus
+            required /><br>
+
+        Correo electrónico:
+        <input type="email" name="mail" size="28" required autocomplete placeholder="nombre@servidor.com" title="Escriba su correo electrónico para 
+    ponernos en contacto." />
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dudas sobre algún aspecto de la asignatura.</legend>
+
+        Descripción del problema/duda <br>
+        <textarea name="descripcion"></textarea>
+        <p>
+
+           Opinión sobre la calidad de la página::<br>
+            <input type="radio" name="proceso" value="sinplantear" checked />
+            Muy buena<br>
+
+            <input type="radio" name="proceso" value="enplanificacion" />
+            Buena<br>
+
+            <input type="radio" name="proceso" value="enejecucion" />
+            Regular<br>
+
+            <input type="radio" name="proceso" value="finalizado" />
+            Lamentable<br>
+        <p>
+
+            Valoración de la página(1-10)
+            <input 
+  type="number"
+  id="valoracion"
+  name="valoracion"
+  min="1"
+  max="10"
+  required
+>
+    </fieldset>
+
+    <input id="boton_enviar" type="submit" value="Enviar">
+    <form action="enviar.php" method="post">
+    
+    
+    
+    
+    
+    
+    
+    
+    </form>
+
+
+</form>
+
+
+    </section>
+</body>
+</html>
